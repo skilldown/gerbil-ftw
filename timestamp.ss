@@ -1,10 +1,10 @@
 ;; -*- Gerbil -*-
 
-(import :clan/utils/timestamp
+(import :clan/timestamp
         :std/srfi/19
         (rename-in :gerbil/gambit/os (time? time??)))
 
-(export #t (import: :clan/utils/timestamp))
+(export #t (import: :clan/timestamp))
 
 (def rfc-1123-format-string "~a, ~d ~b ~Y ~H:~M:~S GMT")
 

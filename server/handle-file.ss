@@ -3,7 +3,7 @@ package: ftw/server
 (export static-file-handler)
 
 (import :ftw/http-status-code :ftw/file
-        :clan/utils/base
+        :clan/base
         :gerbil/gambit/bytes :gerbil/gambit/os
         :std/net/httpd :std/generic :std/sugar :std/pregexp :std/srfi/1)
 

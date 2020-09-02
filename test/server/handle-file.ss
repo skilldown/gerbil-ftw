@@ -2,7 +2,7 @@
 package: test/ftw/server
 (export #t)
 (import :ftw/server :ftw/server/handle-file
-        :clan/utils/base :std/net/request :std/generic)
+        :clan/base :std/net/request :std/generic)
 
 (defclass (test-handle-file-server ftw-server)
   (not-found))

@@ -1,7 +1,7 @@
 (export #t)
 (import :ftw/http-status-code
 	:std/generic
-	:clan/utils/base)
+	:clan/base)
 
 (defclass reply
   (content-type

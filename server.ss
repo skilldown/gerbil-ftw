@@ -1,7 +1,7 @@
 ;; -*- Gerbil -*-
 package: ftw
 (export #t)
-(import :clan/utils/base :std/net/httpd :std/net/address
+(import :clan/base :std/net/httpd :std/net/address
         :std/generic)
 
 (defclass ftw-server 
