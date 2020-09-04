@@ -28,7 +28,8 @@ package: ftw
               mux: (make-default-http-mux
                     (λ (req res)
                       ((ftw-server-handler ftw-server) req res)))))
-    (set! (ftw-server-httpd ftw-server) httpd)
+    ;;(set! (ftw-server-httpd ftw-server) httpd)
+    (apply ftw-server-httpd-set! [ftw-server httpd])
     httpd)
 
 (def (stop-ftw-server! server)
